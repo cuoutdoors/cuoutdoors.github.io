@@ -1,0 +1,68 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.title-text {
+    font-size: 70px;
+    font-weight: bold;
+    text-align:center;
+    margin-top:100px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar {
+    margin-left:20px;
+}
+
+a {
+    a:before,
+    a:after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0; right: 0;
+        height: 2px;
+        background-color: #F37272;
+    }
+    a:before {
+        opacity: 0;
+        transform: translateY(8px);
+        transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275) opacity 0s;
+    }
+    a:after {
+        opacity: 0;
+        transform: translateY(4px);
+        transition: transform .2s cubic-bezier(0.175, 0.885, 0.320, 1.275) opacity .2s;
+    }
+    a:hover,
+    a:focus {
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &:before {
+            transition: transform .2s cubic-bezier(0.175, 0.885, 0.320, 1.275) opacity .2s;
+        }
+        &:after {
+            transition: transform 0s .2s cubic-bezier(0.175, 0.885, 0.320, 1.275) opacity 0s .2s;
+        }
+    }
+}
+
+.navbar-text {
+    font-weight: 300;
+    font-size:28px;
+}
+
+#title-img {
+    position: fixed;
+    /*top: 0;*/
+    bottom: 0;
+    width: 100%;
+    background-size: cover; /* or "contain" */
+    background-position: center bottom;
+}
