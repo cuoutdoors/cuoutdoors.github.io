@@ -17,6 +17,14 @@ body {
     margin-left:20px;
 }
 
+.small-text {
+    font-size: 20px;
+}
+
+#weird-about-id {
+    margin-left: 70px;
+}
+
 a {
     a:before,
     a:after {
@@ -55,7 +63,16 @@ a {
 
 .navbar-text {
     font-weight: 300;
-    font-size:28px;
+    font-size:20px;
+}
+
+
+.subpage-text {
+    font-weight: bold;
+    font-size:70px;
+    text-align:center;
+    margin-top:30px;
+    /*text-align: left;*/
 }
 
 #title-img {
@@ -66,3 +83,10 @@ a {
     background-size: cover; /* or "contain" */
     background-position: center bottom;
 }
+
+#about-img {
+    float:right;
+    padding-right:30px;
+}
+
+
