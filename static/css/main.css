@@ -72,7 +72,17 @@ a {
     font-size:70px;
     text-align:center;
     margin-top:30px;
-    /*text-align: left;*/
+    z-index: 9999;
+    position:relative;
+        -webkit-transition: text-shadow 0.2s linear;
+    -moz-transition: text-shadow 0.2s linear;
+    -ms-transition: text-shadow 0.2s linear;
+    -o-transition: text-shadow 0.2s linear;
+    transition: text-shadow 0.2s linear;
+}
+
+.subpage-text:hover{
+    text-shadow:4px 4px rgb(202, 225, 31), 8px 8px rgb(38, 173, 129);
 }
 
 #title-img {
@@ -87,6 +97,11 @@ a {
 #about-img {
     float:right;
     padding-right:30px;
+}
+
+#board-img {
+    /*height:75%;*/
+    margin-top:-80px;
 }
 
 

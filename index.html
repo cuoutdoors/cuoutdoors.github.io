@@ -589,7 +589,8 @@
       if(d3.select(this).style('fill') == "rgb(0, 0, 0)") {
       }
       else {
-        d3.select(this).style("opacity", 0.8);
+        var rand = Math.random();
+        d3.select(this).style("fill", d3.interpolateViridis(rand));
         console.log('nope');
       }
     })
