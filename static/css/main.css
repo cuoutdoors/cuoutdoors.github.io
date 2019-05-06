@@ -142,3 +142,11 @@ a:hover:before {
     margin-bottom: -50px;
 }
 
+#contact {
+    width: 30%;
+    margin-top: -60px;
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -46,10 +46,13 @@
     </nav>
 
     <div class='row'>
-      <div class='col' id='weird-about-id'>
-        <div class="subpage-text">gear exchange
-          <img src='img/gear.png' id='gear'>
-        </div>
+      <div class='col'>
+        <div class="subpage-text">contact</div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col text-center'>
+          <img src='img/contact.jpg' id='contact'>
       </div>
     </div>
    
@@ -57,9 +60,13 @@
       <div class='col-md-3'>
       </div>
       <div class='col-md-6'>
+        <div class='text-center bold'>
+        Questions about the OC? Got a cool event idea? Let us know below!
+        </div>
         <div class="alert alert-success text-center" id='success-banner' role="alert" style='display:none;'>
           thanks! we'll be in touch :)
         </div>
+
 
         <form id="test-form">
           <div class='form-group'>
@@ -68,26 +75,14 @@
           </div>
 
           <div class='form-group'>
-            <label>Columbia/Barnard Email</label>
-            <input type="email" name="uni" class='form-control' placeholder="Email"/>
+            <label>Email</label>
+            <input type="email" name="email" class='form-control' placeholder="Email"/>
           </div>
 
           <div class='form-group'>
-            <label>Year & School</label>
-            <input type="text" name="yearschool" class='form-control' placeholder="Ex. GS 2020"/>
+            <label>Comment</label>
+            <textarea rows='3' name="comment" class='form-control'></textarea>
           </div>
-
-          <div class='form-group'>
-            <label>Requested gear</label>
-            <textarea rows='3' name="requested_gear" class='form-control'></textarea>
-          </div>
-
-          <div class='form-group'>
-            <label>Requested rental dates (start-end)</label>
-            <input type="text" name="dates" class='form-control'/>
-          </div>
-
-
   <div>
     <button type="submit"id="submit-form" class='btn btn-primary'>Submit</button>
   </div>
@@ -102,7 +97,7 @@
 
 <script>
   var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbwMNHmt43YGeY_PGfzXvQBCqITetWmK4VYjrJSHV2N-hObOM0A/exec'
+    url = 'https://script.google.com/macros/s/AKfycbxIZ7P3fOffWOfVo-8Sd4VXwQHEpcd44jmUpqp3nAvU4sIYyaA/exec'
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
