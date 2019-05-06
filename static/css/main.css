@@ -6,6 +6,15 @@ body {
     font-weight: bold;
     text-align:center;
     margin-top:100px;
+    -webkit-transition: text-shadow 0.2s linear;
+    -moz-transition: text-shadow 0.2s linear;
+    -ms-transition: text-shadow 0.2s linear;
+    -o-transition: text-shadow 0.2s linear;
+    transition: text-shadow 0.2s linear;
+}
+
+.title-text:hover {
+    text-shadow:4px 4px rgb(202, 225, 31), 8px 8px rgb(38, 173, 129);
 }
 
 .container-fluid {
