@@ -102,6 +102,30 @@ a {
 #board-img {
     /*height:75%;*/
     margin-top:-80px;
+    margin-bottom: 80px;
 }
 
+.person {
+    width:60%;
+    border-radius:50%;
+}
+
+.person-label {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.person-position {
+    font-size: 30px;
+    font-weight: 300;
+    text-color: grey;
+    margin-top:-10px;
+}
+
+.board {
+    padding-right: 100px;
+}
+.spaced {
+    margin-top:90px;
+}
 
